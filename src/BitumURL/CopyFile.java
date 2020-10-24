@@ -11,7 +11,7 @@ class CopyFile {
         Path originalPath = Paths.get(original);
         Path targetPath = Paths.get(target);
         Files.copy(originalPath, targetPath, StandardCopyOption.REPLACE_EXISTING);
-        System.out.println("Thread name-"+Thread.currentThread().getName());
+        System.out.println("Thread name-" + Thread.currentThread().getName());
         System.out.printf("File %s was copied to %s\n", originalPath.getFileName(), targetPath.getFileName());
     }
 }

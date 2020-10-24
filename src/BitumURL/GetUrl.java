@@ -5,7 +5,7 @@ import java.net.URL;
 
 class GetUrl {
     public static URL get(String http) throws MalformedURLException {
-        return(new URL(http));
+        return (new URL(http));
     }
 }
 
