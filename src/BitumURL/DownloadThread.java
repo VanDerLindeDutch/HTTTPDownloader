@@ -7,9 +7,9 @@ import java.util.Map;
 import static BitumURL.CopyFile.copyFile;
 
 
-public class DownloadThread implements Runnable {
+class DownloadThread implements Runnable {
     final List<Map.Entry<String, List<String>>> list;
-    String dir;
+    final String dir;
     final int begin, NoT;
 
     public DownloadThread(List<Map.Entry<String, List<String>>> list, String dir, int begin, int not) {

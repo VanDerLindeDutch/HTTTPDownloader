@@ -25,10 +25,8 @@ public class ReadLinkList {
             String[] links = i.split(" ");
             if (!hashMap.containsKey(links[0])) {
                 hashMap.put(links[0], new ArrayList<>());
-                hashMap.get(links[0]).add(links[1]);
-            } else {
-                hashMap.get(links[0]).add(links[1]);
             }
+            hashMap.get(links[0]).add(links[1]);
         }
 
         List<Map.Entry<String, List<String>>> listEntry = new ArrayList<>(hashMap.entrySet());
